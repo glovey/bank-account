@@ -7,7 +7,7 @@ introduced a main menu so the user chooses the action they want
 
 Issues / improvements:
 
-I wanted to include an 'open account' function to generate new account objects. Rough code below:
+I wanted to include an 'open account' function to generate new account objects. Rough code (that doesnt work) below:
 
  def OpenAccount(name, balance):
 
