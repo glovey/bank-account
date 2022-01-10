@@ -49,21 +49,11 @@ class Account:
 
 #General methods
 
-#def OpenAccount(name, balance):
 
- # acc_number =1
- # name = input("To open an account give your first name")
- # balance = ("Now state your opening balance")
-
- # f"acc{acc_number}" = Account(name, balance)
-  
-
-  #print (f"CONGRATS, you have a new bank account\naccount number is acc{acc_number}#\naccount name = {name}\n balance is {balance}")
-  #acc_number +=1
 
 def main_menu(choice):
   choice = ""
-  choice =  input("Choose an option: \ndeposit (answer 1)\nwithdraw (answer 2)\nlog off (answer 3)")
+  choice =  input("Choose an option: \ndeposit (answer 1)\nwithdraw (answer 2)\nCheck account details (answer 3)\nlog off (answer 4)")
   return choice
 
 def transact (trans):
@@ -91,6 +81,9 @@ if acc001.pin_check() == True:
       trans = transact(trans)
     elif choice == "2":
       acc001.withdraw()
+      trans = transact(trans)
+    elif choice == "3":
+      print (acc001)
       trans = transact(trans)
     else:
       print("thanks, goodbye")
